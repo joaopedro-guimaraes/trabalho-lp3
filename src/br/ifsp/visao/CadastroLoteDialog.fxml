@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="232.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.CadastroLoteDialogController">
+   <children>
+      <Label layoutX="150.0" layoutY="45.0" text="Data:" />
+      <DatePicker fx:id="pickerData" layoutX="150.0" layoutY="66.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="25.0" layoutY="106.0" text="Fornecedor:" />
+      <Label layoutX="261.0" layoutY="106.0" text="Valor:" />
+      <TextField fx:id="txtFieldValor" layoutX="261.0" layoutY="132.0" prefHeight="25.0" prefWidth="164.0" />
+      <Label layoutX="301.0" layoutY="45.0" text="Lucro (%):" />
+      <TextField fx:id="txtFieldLucro" layoutX="301.0" layoutY="66.0" prefHeight="25.0" prefWidth="120.0" />
+      <Button fx:id="btnCancelar" layoutX="354.0" layoutY="182.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Cancelar" />
+      <Button fx:id="btnConfirmar" layoutX="258.0" layoutY="182.0" mnemonicParsing="false" text="Confirmar" />
+      <Label layoutX="22.0" layoutY="45.0" text="ID:" />
+      <TextField fx:id="txtFieldId" layoutX="22.0" layoutY="66.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label layoutX="23.0" layoutY="14.0" prefHeight="25.0" prefWidth="120.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Cadastro Lote" />
+      <ComboBox fx:id="cbxFornecedor" layoutX="22.0" layoutY="132.0" prefHeight="25.0" prefWidth="173.0" />
+   </children>
+</AnchorPane>

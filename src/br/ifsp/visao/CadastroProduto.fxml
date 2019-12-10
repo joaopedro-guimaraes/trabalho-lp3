@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.CadastroProdutoController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="60.0" layoutY="61.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="274.0">
+               <children>
+                  <TableView fx:id="tableViewProdutos" layoutX="8.0" layoutY="33.0" prefHeight="376.0" prefWidth="283.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnId" prefWidth="73.0" text="Id" />
+                      <TableColumn fx:id="tableColumnNome" prefWidth="124.0" text="Nome" />
+                        <TableColumn fx:id="tableColumnEstoque" prefWidth="75.0" text="Estoque" />
+                        <TableColumn fx:id="tableColumnFornecedor" prefWidth="75.0" text="Fornecedor" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="356.0">
+               <children>
+                  <Label layoutX="145.0" layoutY="68.0" prefHeight="29.0" prefWidth="115.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="INFORMAÇÕES" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="68.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txbPesquisa" layoutX="60.0" layoutY="26.0" prefHeight="25.0" prefWidth="322.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                  <Label layoutX="22.0" layoutY="30.0" prefHeight="17.0" prefWidth="34.0" style="-fx-font-weight: bold;" text="Filtro:" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="25.0" />
+                  <GridPane layoutX="15.0" layoutY="146.0" prefHeight="190.0" prefWidth="381.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="146.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="103.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="62.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Id:" />
+                        <Label style="-fx-font-weight: bold;" text="Nome:" GridPane.rowIndex="2" />
+                        <Label fx:id="lblNome" prefHeight="17.0" prefWidth="178.0" GridPane.rowIndex="3" />
+                        <Label style="-fx-font-weight: bold;" text="Status:" GridPane.columnIndex="1" />
+                        <Label fx:id="lblCategoria" prefHeight="17.0" prefWidth="159.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label style="-fx-font-weight: bold;" text="Categoria:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lblStatus" prefHeight="17.0" prefWidth="143.0" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="lblid" prefHeight="17.0" prefWidth="129.0" GridPane.rowIndex="1" />
+                        <Label style="-fx-font-weight: bold;" text="Fornecedor:" GridPane.rowIndex="4" />
+                        <Label fx:id="lblFornecedor" prefHeight="17.0" prefWidth="184.0" GridPane.rowIndex="5" />
+                        <Label style="-fx-font-weight: bold;" text="Lote:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="lblLote" prefHeight="17.0" prefWidth="161.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label prefHeight="17.0" prefWidth="115.0" style="-fx-font-weight: bold;" text="Quantidade Inicial:" GridPane.rowIndex="6" />
+                        <Label fx:id="lblQtddInicial" prefHeight="17.0" prefWidth="115.0" GridPane.rowIndex="7" />
+                        <Label prefHeight="17.0" prefWidth="50.0" style="-fx-font-weight: bold;" text="Estoque:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="lblQtdAtual" prefHeight="17.0" prefWidth="152.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label style="-fx-font-weight: bold;" text="Descrição:" GridPane.rowIndex="8" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="btnNovo" layoutX="29.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Inserir" AnchorPane.leftAnchor="25.0" />
+                  <Button fx:id="btnEditar" layoutX="119.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Alterar" AnchorPane.leftAnchor="118.0" />
+                  <Button fx:id="btnExcluir" layoutX="210.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Remover" AnchorPane.rightAnchor="118.0" />
+                  <CheckBox fx:id="ckAtivo" layoutX="54.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#preencheLista" style="-fx-font-weight: bold;" text="Ativos" AnchorPane.leftAnchor="54.0" />
+                  <CheckBox fx:id="ckInativo" layoutX="145.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#preencheLista" style="-fx-font-weight: bold;" text="Inativos" />
+                  <Button fx:id="btnFechar" layoutX="303.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Fechar" AnchorPane.rightAnchor="25.0" />
+                  <TextArea fx:id="txaDesc" layoutX="19.0" layoutY="336.0" prefHeight="100.0" prefWidth="339.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

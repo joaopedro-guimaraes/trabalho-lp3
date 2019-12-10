@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.GerenciaVendasController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Vendas:" />
+      <TableView fx:id="tableViewVenda" editable="true" layoutX="14.0" layoutY="31.0" prefHeight="520.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="columnIDVenda" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columnDataVenda" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="columnValorVenda" prefWidth="75.0" text="Valor" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="465.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Itens:" />
+      <TableView fx:id="tableViewListaProduto" editable="true" layoutX="465.0" layoutY="31.0" prefHeight="340.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="columnIDProduto" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columnNomeProduto" prefWidth="75.0" text="NOME" />
+            <TableColumn fx:id="columnQuantProduto" prefWidth="75.0" text="QUANTIDADE" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="465.0" layoutY="379.0" style="-fx-font-weight: bold;" text="Total da compra: R$" />
+      <Label fx:id="lblTotalCompra" layoutX="577.0" layoutY="346.0" />
+      <Label layoutX="654.0" layoutY="434.0" style="-fx-font-weight: bold;" text="CPF :" />
+      <TextField fx:id="txfNomeCliente" layoutX="342.0" layoutY="451.0" prefHeight="25.0" prefWidth="286.0" />
+      <Label layoutX="534.0" layoutY="408.0" style="-fx-font-weight: bold;" text="Cliente:" />
+      <Label fx:id="lblNomeCliente" layoutX="508.0" layoutY="425.0" />
+      <TextField fx:id="txfCpfCliente" layoutX="651.0" layoutY="451.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="343.0" layoutY="434.0" style="-fx-font-weight: bold;" text="Nome:" />
+      <Label layoutX="526.0" layoutY="484.0" prefHeight="17.0" prefWidth="63.0" style="-fx-font-weight: bold;" text="Vendedor:" />
+      <Label layoutX="343.0" layoutY="509.0" style="-fx-font-weight: bold;" text="Nome:" />
+      <TextField fx:id="txfNomeVendedor" layoutX="343.0" layoutY="526.0" prefHeight="25.0" prefWidth="286.0" />
+      <Label layoutX="652.0" layoutY="509.0" style="-fx-font-weight: bold;" text="ID:" />
+      <TextField fx:id="txfIdVendedor" layoutX="650.0" layoutY="526.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="333.0" layoutY="31.0" style="-fx-font-weight: bold;" text="Filtros:" />
+      <Label layoutX="333.0" layoutY="62.0" style="-fx-font-weight: bold;" text="Inicio:" />
+      <Label layoutX="331.0" layoutY="114.0" style="-fx-font-weight: bold;" text="Fim:" />
+      <DatePicker fx:id="inicio" layoutX="324.0" layoutY="79.0" prefHeight="25.0" prefWidth="133.0" />
+      <DatePicker fx:id="fim" layoutX="324.0" layoutY="131.0" prefHeight="25.0" prefWidth="133.0" />
+      <ComboBox fx:id="cbxTabelas" layoutX="324.0" layoutY="189.0" prefHeight="25.0" prefWidth="133.0" />
+      <Label layoutX="332.0" layoutY="172.0" style="-fx-font-weight: bold;" text="Tipos de busca:" />
+      <TextField fx:id="txfPesquisa" layoutX="322.0" layoutY="250.0" prefHeight="25.0" prefWidth="133.0" />
+      <Label layoutX="327.0" layoutY="233.0" style="-fx-font-weight: bold;" text="Identificadores:" />
+      <Button fx:id="btnPesquisar" layoutX="336.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Pesquisar" />
+   </children>
+</AnchorPane>

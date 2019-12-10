@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.CadastroFornecedorController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="119.0" layoutY="78.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="67.0" layoutY="54.0" prefHeight="573.0" prefWidth="396.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="columnID" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="columnNome" prefWidth="75.0" text="NOME" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Filtro:" />
+                  <TextField fx:id="txtFieldFiltro" layoutX="49.0" layoutY="10.0" prefHeight="25.0" prefWidth="333.0" />
+                  <CheckBox fx:id="ckAtivo" layoutX="54.0" layoutY="46.0" mnemonicParsing="false" onAction="#preencheLista" text="Ativos" />
+                  <CheckBox fx:id="ckInativo" layoutX="126.0" layoutY="46.0" mnemonicParsing="false" onAction="#preencheLista" text="Inativos" />
+                  <Label layoutX="166.0" layoutY="76.0" text="INFORMAÇÕES">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="105.0" text="ID:" />
+                  <Label fx:id="lblID" layoutX="35.0" layoutY="105.0" />
+                  <Label layoutX="15.0" layoutY="122.0" text="Nome:" />
+                  <Label fx:id="lblNome" layoutX="54.0" layoutY="122.0" />
+                  <Label layoutX="15.0" layoutY="139.0" text="CNPJ:" />
+                  <Label fx:id="lblCNPJ" layoutX="49.0" layoutY="139.0" />
+                  <Label layoutX="15.0" layoutY="186.0" text="CONTATO:" />
+                  <Label layoutX="15.0" layoutY="216.0" text="Tel. 1:" />
+                  <Label fx:id="lblTel1" layoutX="48.0" layoutY="216.0" />
+                  <Label layoutX="15.0" layoutY="233.0" text="Tel. 2:" />
+                  <Label fx:id="lblTel2" layoutX="48.0" layoutY="233.0" />
+                  <Label layoutX="15.0" layoutY="250.0" text="E-mail:" />
+                  <Label fx:id="lblEmail" layoutX="54.0" layoutY="250.0" />
+                  <Button fx:id="btnInserir" layoutX="28.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Inserir" />
+                  <Button fx:id="btnAlterar" layoutX="125.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Alterar" />
+                  <Button fx:id="btnRemover" layoutX="216.0" layoutY="519.0" mnemonicParsing="false" text="Remover" />
+                  <Button fx:id="btnFechar" layoutX="301.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Fechar" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

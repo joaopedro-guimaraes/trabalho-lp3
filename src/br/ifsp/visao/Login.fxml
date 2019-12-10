@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="421.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.LoginController">
+   <children>
+      <ImageView fitHeight="417.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/2148.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEntra" layoutX="129.0" layoutY="335.0" mnemonicParsing="false" onAction="#ClickEntrar" prefHeight="25.0" prefWidth="156.0" style="-fx-background-radius: 100;" text="Entrar" />
+      <TextField fx:id="txfLogin" layoutX="111.0" layoutY="214.0" prefHeight="25.0" prefWidth="191.0" />
+      <PasswordField fx:id="txfSenha" layoutX="111.0" layoutY="281.0" prefHeight="25.0" prefWidth="191.0" />
+      <Label layoutX="110.0" layoutY="191.0" prefHeight="17.0" prefWidth="39.0" text="Login" textFill="#ebe4e4" />
+      <Label layoutX="111.0" layoutY="257.0" prefHeight="17.0" prefWidth="60.0" text="Password" textFill="#f0f2f1" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.CadastroProdutoDialogController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="47.0" prefHeight="193.0" prefWidth="687.0" style="-fx-border-radius: 8px; -fx-background-radius: 10px; -fx-border-color: grey; -fx-background-color: whitesmoke;">
+         <children>
+            <Label layoutX="315.0" layoutY="15.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Quantidade:" AnchorPane.leftAnchor="315.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txfId" layoutX="13.0" layoutY="32.0" prefHeight="25.0" prefWidth="102.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="35.0" />
+            <TextField fx:id="txfQuantidade" layoutX="314.0" layoutY="37.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.leftAnchor="314.0" AnchorPane.topAnchor="35.0" />
+            <Label layoutX="15.0" layoutY="9.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="ID:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="16.0" prefHeight="20.0" prefWidth="60.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Status:" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="71.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Registro:" AnchorPane.topAnchor="71.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="11.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Valor unitário:" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txfValor" layoutX="140.0" layoutY="36.0" prefHeight="25.0" prefWidth="150.0" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="35.0" />
+            <Label layoutX="244.0" layoutY="72.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Lote:" AnchorPane.leftAnchor="244.0" AnchorPane.topAnchor="72.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbxLote" layoutX="245.0" layoutY="95.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="95.0" />
+            <Button fx:id="btnSalvar" layoutX="448.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Salvar" />
+            <Button fx:id="btnCancelar" layoutX="558.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Cancelar" />
+            <ComboBox fx:id="cbxRegistro" layoutX="14.0" layoutY="94.0" prefHeight="25.0" prefWidth="209.0" AnchorPane.topAnchor="95.0" />
+            <TextField fx:id="txfStatus" layoutX="499.0" layoutY="36.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.leftAnchor="499.0" AnchorPane.topAnchor="35.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="23.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Cadastro Produto">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

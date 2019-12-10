@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="776.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.ifsp.visao.CadastroRegistroProdutoDialogController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="47.0" prefHeight="193.0" prefWidth="748.0" style="-fx-border-radius: 8px; -fx-background-radius: 10px; -fx-border-color: grey; -fx-background-color: whitesmoke;">
+         <children>
+            <Label layoutX="16.0" layoutY="69.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Descrição:" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="69.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txfId" layoutX="13.0" layoutY="32.0" prefHeight="25.0" prefWidth="102.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="34.0" />
+            <TextField fx:id="txfNome" layoutX="151.0" layoutY="33.0" prefHeight="25.0" prefWidth="393.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="34.0" />
+            <TextField fx:id="txfCodigo" layoutX="562.0" layoutY="35.0" prefHeight="25.0" prefWidth="167.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="34.0" />
+            <Label layoutX="15.0" layoutY="9.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="ID:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="9.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="559.0" layoutY="10.0" prefHeight="20.0" prefWidth="60.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Código:" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="9.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Nome:" AnchorPane.topAnchor="9.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="396.0" layoutY="70.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Status:" AnchorPane.leftAnchor="396.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txfStatus" layoutX="397.0" layoutY="90.0" prefHeight="25.0" prefWidth="150.0" AnchorPane.leftAnchor="397.0" AnchorPane.topAnchor="90.0" />
+            <Label layoutX="561.0" layoutY="70.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Categoria:" AnchorPane.leftAnchor="561.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbxCategoria" layoutX="560.0" layoutY="91.0" prefHeight="25.0" prefWidth="160.0" AnchorPane.leftAnchor="560.0" AnchorPane.topAnchor="91.0" />
+            <Button fx:id="btnSalvar" layoutX="482.0" layoutY="146.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Salvar" />
+            <Button fx:id="btnCancelar" layoutX="618.0" layoutY="146.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Cancelar" />
+            <TextArea fx:id="txaDescri" layoutX="17.0" layoutY="90.0" prefHeight="91.0" prefWidth="353.0" style="-fx-border-color: grey;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="23.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="Cadastro Produto">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ifsp.visao.CadastrosClienteDialogController">
+   <children>
+      <Group layoutX="427.0" layoutY="354.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label layoutX="11.0" layoutY="16.0" text="Nome:" />
+      <TextField fx:id="textFieldNome" layoutX="59.0" layoutY="11.0" prefHeight="25.0" prefWidth="435.0" />
+      <Label layoutX="11.0" layoutY="52.0" text="CPF:" />
+      <TextField fx:id="textFieldCPF" layoutX="50.0" layoutY="47.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="261.0" layoutY="52.0" text="RG:" />
+      <TextField fx:id="textFieldRG" layoutX="294.0" layoutY="47.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="11.0" layoutY="88.0" text="Sexo:" />
+      <ComboBox fx:id="comboBoxSexo" layoutX="54.0" layoutY="83.0" prefWidth="150.0" />
+      <Label layoutX="241.0" layoutY="87.0" text="Data Nasc.:" />
+      <Group layoutX="187.0" layoutY="160.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+         <children>
+            <Button fx:id="buttonEndereco" mnemonicParsing="false" onAction="#clickButtonEndereco" prefHeight="25.0" prefWidth="76.0" text="Endereço" />
+            <Button fx:id="buttonContato" layoutX="87.0" mnemonicParsing="false" onAction="#clickButtonContato" prefHeight="25.0" prefWidth="76.0" text="Contato" />
+         </children>
+      </Group>
+      <Group layoutX="313.0" layoutY="160.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <DatePicker fx:id="fieldDataNasc" layoutX="320.0" layoutY="83.0" />
+      <Button fx:id="buttonConfirmar" layoutX="332.0" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Confirmar" />
+      <Button fx:id="buttonCancelar" layoutX="418.0" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Cancelar" />
+   </children>
+</AnchorPane>
